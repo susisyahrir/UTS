@@ -140,5 +140,5 @@ ssssssssssssssssssssssssssssssss sssss"/>
         app:strokeWidth="3px"
         app:cornerRadius="5dp"
         android:layout_gravity="center"
-        android:text="Rent"/>
+        android:text="Book"/>
 </LinearLayout>
