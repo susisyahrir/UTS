@@ -44,6 +44,20 @@ class MainActivity : AppCompatActivity() {
             datePickerDialog.show()
         }
 
+        var smoking = true
+        var bed = true
+        btn_Book.setOnClickListener {
+            if(rdn_smoking.isChecked())
+                smoking = true
+            else
+                smoking = false
+            if(rdn_single.isChecked())
+                bed = true
+            else
+                bed = false
+
+        }
+
 
 
         var h = Hotel(R.drawable.ic_action_date, "Banamas Hotel", "Location : Amabd No. 123", 30, tanggalMasuk, tanggalKeluar, true, true )

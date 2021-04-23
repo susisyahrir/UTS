@@ -100,10 +100,13 @@ ssssssssssssssssssssssssssssssss sssss"/>
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <RadioButton
+            android:id="@+id/rdn_smoking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Smoking"/>
+            android:text="Smoking"
+            android:checked="true"/>
         <RadioButton
+            android:id="@+id/rdn_nonsmoking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Non-Smoking"/>
@@ -115,10 +118,13 @@ ssssssssssssssssssssssssssssssss sssss"/>
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <RadioButton
+            android:id="@+id/rdn_single"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Single Bed"/>
+            android:text="Single Bed"
+            android:checked="true"/>
         <RadioButton
+            android:id="@+id/rdn_double"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Double Bed"/>
