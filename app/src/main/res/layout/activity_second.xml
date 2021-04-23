@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/gambar2"
+            android:layout_width="200dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/namaHotel2"
+            android:layout_toRightOf="@+id/gambar2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Nama Hotel"/>
+        <TextView
+            android:id="@+id/lokasiHotel2"
+            android:layout_toRightOf="@+id/gambar2"
+            android:layout_below="@+id/namaHotel2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location : adfad"/>
+        <TextView
+            android:id="@+id/checkin"
+            android:layout_below="@+id/gambar2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check-In: "/>
+        <TextView
+            android:id="@+id/tanggalIn2"
+            android:layout_below="@+id/gambar2"
+            android:layout_toRightOf="@+id/checkin"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 Maret 2021\nAfter 14:00"/>
+
+        <TextView
+            android:id="@+id/checkout"
+            android:layout_below="@+id/checkin"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check-Out: "/>
+        <TextView
+            android:id="@+id/tanggalOut2"
+            android:layout_below="@+id/checkin"
+            android:layout_toRightOf="@+id/checkout"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27 Maret 2021\nBefore 12:00"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment: "
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:hint="Card Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:hint="Card Number"/>
+    <Button
+        android:id="@+id/btn_Pay"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:textSize="20dp"/>
+
+</LinearLayout>
